@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>İlk Ders</title>
+</head>
+<body>
+<font color="purple" id="baslik" size=20> Soru 6</font>
+<br>
+<br>
+Gün:
+<select id="gun" name="gun">
+  <script>
+  for(var i = 1; i<32; i++){
+	  document.write('<option value="' + i + '">' + i + '</option>');
+  }
+  </script>
+</select>
+ Ay:
+<select id="ay" name="ay">
+  <option value="1">Ocak</option>
+  <option value="2">Şubat</option>
+  <option value="3">Mart</option>
+  <option value="4">Nisan</option>
+  <option value="5">Mayıs</option>
+  <option value="6">Haziran</option>
+  <option value="7">Temmuz</option>
+  <option value="8">Ağustos</option>
+  <option value="9">Eylül</option>
+  <option value="10">Ekim</option>
+  <option value="11">Kasım</option>
+  <option value="12">Aralık</option>
+</select>
+ Yıl:
+<select id="yil" name="yil">
+  <script>
+  var tarih = new Date();
+  var buyil = tarih.getFullYear();
+  for(var i = 1907; i < buyil+1; i++){
+	  document.write('<option value="' + i + '">' + i + '</option>');
+  }
+  </script>
+</select>
+</body>
+</html>

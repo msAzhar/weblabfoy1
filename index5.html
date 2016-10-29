@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>İlk Ders</title>
+</head>
+<body>
+<font color="purple" id="baslik" size=20> Başlığımız</font>
+<br>
+<br>
+Aşağıdaki textbox'a yeni başlığı giriniz:<br>
+
+<input type="text" id="yenibaslik" name="yenibaslik"/><br>
+<button type="submit" onclick="degistir()">Başlığı Değiştir</button>
+
+<script>
+function degistir(){
+	var baslik = document.getElementById("baslik");
+	var yenibaslik = document.getElementById("yenibaslik");
+	document.title = yenibaslik.value; // bu HTML sayfasinin basligini degistirmekte
+	baslik.innerHTML = yenibaslik.value; // bu kisim ise, sayfada belirlenen 
+	// baslik kismindaki degeri degistirmektedir
+}
+</script>
+
+</body>
+</html>

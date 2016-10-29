@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>İlk Ders</title>
+</head>
+<body>
+<font color="purple" id="baslik" size=20> Soru 7</font>
+<br>
+<br>
+
+Gün:
+<select id="gun" name="gun">
+  <script>
+  for(var i = 1; i<32; i++){
+   document.write('<option value="' + i + '">' + i + '</option>');
+  }
+  </script>
+</select>
+ Ay:
+<select id="ay" name="ay">
+  <option value="0">Ocak</option>
+  <option value="1">Şubat</option>
+  <option value="2">Mart</option>
+  <option value="3">Nisan</option>
+  <option value="4">Mayıs</option>
+  <option value="5">Haziran</option>
+  <option value="6">Temmuz</option>
+  <option value="7">Ağustos</option>
+  <option value="8">Eylül</option>
+  <option value="9">Ekim</option>
+  <option value="10">Kasım</option>
+  <option value="11">Aralık</option>
+</select>
+ Yıl:
+<select id="yil" name="yil">
+  <script>
+  var tarih = new Date();
+  var buyil = tarih.getFullYear();
+  for(var i = 1907; i < buyil+1; i++){
+   document.write('<option value="' + i + '">' + i + '</option>');
+  }
+  </script>
+</select>
+<br>
+<br>
+Girilen tarihten bugüne kadar kaç gün geçtiğini öğrenmek için aşağıdaki butona tıklayınız.<br>
+<button type="submit" name="hesaplama" onclick="hesapla()">Hesapla</button>
+
+<p id="gunfark"></p>
+
+<script>
+function hesapla(){
+var bugun = new Date();
+var yil= document.getElementById("yil").value;
+var ay= document.getElementById("ay").value;
+var gun= document.getElementById("gun").value;
+var secilentarih = new Date(yil,ay,gun);
+var gunfark = Math.floor((bugun - secilentarih) / (24*60*60*1000));
+
+document.getElementById("gunfark").innerHTML = gunfark;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>İlk Ders</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#button1").click(function(){
+        $("#div1").fadeIn();
+        $("#div2").fadeIn(2000);
+        $("#div3").fadeIn(4000);
+        $("#div4").fadeIn(6000);
+        $("#div5").fadeIn(8000);
+        $("#div6").fadeIn(10000);
+        $("#div7").fadeIn(12000);
+        $("#div8").fadeIn(14000);
+        $("#div9").fadeIn(18000);
+        $("#div10").fadeIn(20000);
+    });
+
+    $("#button2").click(function(){
+        $("#div1").fadeOut();
+        $("#div2").fadeOut(2000);
+        $("#div3").fadeOut(4000);
+        $("#div4").fadeOut(6000);
+        $("#div5").fadeOut(8000);
+        $("#div6").fadeOut(10000);
+        $("#div7").fadeOut(12000);
+        $("#div8").fadeOut(14000);
+        $("#div9").fadeOut(18000);
+        $("#div10").fadeOut(20000);
+    });
+});
+</script>
+</head>
+<body>
+<font color="purple" id="baslik" size=20> Soru 9</font>
+<br>
+<br>
+
+<p>"Ne Mutlu Türk’üm Diyene!" yazısını belirli aralıklarla alt alta yazdırılması ve yok edilmesi</p>
+
+<button id="button1">Yazıyı yazdırmak için tıklayınız</button><br><br>
+<button id="button2">Yazıyı yok etmek için tıklayınız</button><br><br>
+
+<div id="div1" style="width:200px;display:none;color:white;background-color:red;">Ne Mutlu Türk’üm Diyene!</div><br>
+<div id="div2" style="width:200px;display:none;color:white;background-color:red;">Ne Mutlu Türk’üm Diyene!</div><br>
+<div id="div3" style="width:200px;display:none;color:white;background-color:red;">Ne Mutlu Türk’üm Diyene!</div><br>
+<div id="div4" style="width:200px;display:none;color:white;background-color:red;">Ne Mutlu Türk’üm Diyene!</div><br>
+<div id="div5" style="width:200px;display:none;color:white;background-color:red;">Ne Mutlu Türk’üm Diyene!</div><br>
+<div id="div6" style="width:200px;display:none;color:white;background-color:red;">Ne Mutlu Türk’üm Diyene!</div><br>
+<div id="div7" style="width:200px;display:none;color:white;background-color:red;">Ne Mutlu Türk’üm Diyene!</div><br>
+<div id="div8" style="width:200px;display:none;color:white;background-color:red;">Ne Mutlu Türk’üm Diyene!</div><br>
+<div id="div9" style="width:200px;display:none;color:white;background-color:red;">Ne Mutlu Türk’üm Diyene!</div><br>
+<div id="div10" style="width:200px;display:none;color:white;background-color:red;">Ne Mutlu Türk’üm Diyene!</div><br>
+
+</body>
+</html>
